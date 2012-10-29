@@ -33,7 +33,7 @@
 	<?php } ?>
 
 	<nav id="pagenav">
-		{hi:@prev_page_link} {hi:@page_selector} {hi:@next_page_link}
+		{hi:@prev_page_link_out} {hi:@page_selector_out} {hi:@next_page_link_out}
 	</nav>
 </div>
 <!--end content-->

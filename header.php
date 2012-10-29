@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="generator" content="Habari">
 
-	<title>{hi:@title}</title>
+	<title>{hi:@title_out}</title>
 
 	<!--[if lt IE 9]><script>
 		var e = ("abbr,article,aside,audio,canvas,datalist,details," +
@@ -15,7 +15,7 @@
 		}
 	</script> <![endif]-->
 
-	{hi:@header}
+	{hi:@header_out}
 </head>
 <body>
 	<!--begin masthead-->
@@ -25,9 +25,8 @@
 			<h2 id="siteTagline">{hi:option:tagline}</h2>
 		</hgroup>
 		<nav>
+			{hi:area:nav_top}
 			<ul class="sitemenu">
-				<li><a href="{hi:siteurl:habari}">{hi:"Home"}</a></li>
-				{hi:pages}<li><a href="{hi:permalink}" title="{hi:title}" >{hi:title}</a></li>{/hi:pages}
 				<li class="search">{hi:display:searchform}</li>
 			</ul>
 		</nav>

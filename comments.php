@@ -37,7 +37,7 @@
 	<section>
 	    <h5 id="respond"><em>{hi:"What do you think?"}</em></h5>
 		{hi:session:messages}
-		{hi:@comment_form}
+		{hi:@comment_form_out}
 	</section>
 	{/hi:?}
 </section>

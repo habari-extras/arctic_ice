@@ -1,3 +1,6 @@
+Version 1.2
+- Made compatible with Habari 0.8
+
 Version 1.1
 - Began converting to HTML 5.
 

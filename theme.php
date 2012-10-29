@@ -34,48 +34,6 @@ class ArcticIceTheme extends Theme
 		Format::apply( 'nice_date', 'comment_date_out', 'F j, Y g:ia');
 	}
 
-	/**
-	 * Configuration form for the ArcticIceTheme
-	 **/
-	public function action_theme_ui( $theme )
-	{
-		$ui = new FormUI( __CLASS__ );
-		$slugs = $ui->append( 'textarea', 'slugs', __CLASS__.'__slugs', _t( 'Terms to exclude from pages:' ) );
-		$slugs->rows = 8;
-		$slugs->class[] = 'resizable';
-		$ui->append( 'submit', 'save', _t( 'Save' ) );
-		$ui->set_option( 'success_message', _t( 'Options saved' ) );
-		$ui->out();
-
-//		$ui->append( 'text', 'tags_count', __CLASS__.'__tags_count', _t( 'Tag Cloud Count:' ), 'optionscontrol_text' );
-//			$ui->tags_count->helptext = _t( 'Set to the number of tags to display on the default "cloud".' );
-	}
-
-	/**
-	 * Add additional template variables to the template output.
-	 * 
-	 * This function gets executed *after* regular data is assigned to the
-	 * template.  So the values here, unless checked, will overwrite any existing 
-	 * values.
-	 */
-	public function add_template_vars()
-	{
-		parent::add_template_vars();
-		$opts = Options::get_group( __CLASS__ );
-		$terms = array();
-		if( isset( $opts['slugs'] ) ) {
-			$slugs = explode( '\r\n', $opts['slugs'] );
-			foreach( $slugs as $slug ) {
-				$terms[] = Tags::get_by_slug( $slug );
-			}
-		}
-		if( !$this->template_engine->assigned( 'pages' ) ) {
-//			$this->assign( 'pages', Posts::get( array( 'content_type' => 'page', 'status' => 'published', 'vocabulary' => array( 'not' => array( Tags::get_by_slug( 'site-policy' ) ) ), 'nolimit' => 1 ) ) );
-//			$this->assign( 'pages', Posts::get( array( 'content_type' => 'page', 'status' => 'published', 'vocabulary' => array( 'tags:not:term' => 'site-policy' ), 'nolimit' => 1 ) ) );
-			$this->assign( 'pages', Posts::get( array( 'content_type' => 'page', 'status' => 'published', 'vocabulary' => array( 'not' => $terms ), 'nolimit' => 1 ) ) );
-		}
-	}
-
 	public function action_template_header( $theme )
 	{
 		// Add the stylesheets to the stack for output

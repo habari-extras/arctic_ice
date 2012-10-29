@@ -2,7 +2,7 @@
 <!--begin content-->
 <div id="content">
 	<!--begin loop-->
-	<h1>{hi:"Results for search of "} <?php echo htmlspecialchars( $criteria, ENT_COMPAT, 'UTF-8' ); ?></h1>
+	<h1>{hi:"Search results for: "}{hi:criteria}</h1>
 
 	{hi:posts}
 		<article id="post-{hi:id}" class="{hi:statusname}">
@@ -28,7 +28,7 @@
 	<!--end loop-->
 
 	<nav id="pagenav">
-		{hi:@prev_page_link} {hi:@page_selector} {hi:@next_page_link}
+		{hi:@prev_page_link_out} {hi:@page_selector_out} {hi:@next_page_link_out}
 	</nav>
 </div><!--end content-->
 {hi:display:sidebar}

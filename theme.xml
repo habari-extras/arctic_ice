@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pluggable type="theme"> 
+<pluggable type="theme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://schemas.habariproject.org/pluggable/0.8"> 
 	<name>Arctic Ice</name>
 	<class>ArcticIceTheme</class>
 	<author url="http://sagrising.cockrumpublishing.com">Richard Cockrum</author>
 	<url>http://sagrising.cockrumpublishing.com/</url>
-	<version>1.1</version>
+	<version>1.2</version>
 	<copyright>2011</copyright>
 	<template_engine>HiEngine</template_engine>
-	<description><![CDATA[A cool blue two column theme based on Habari's Mzingi. Arctic Ice uses Habari's HiEngine templating engine wherever possible.]]></description>
+	<description><![CDATA[A cool blue two column theme based on Habari's Mzingi. Arctic Ice uses Habari's HiEngine templating engine. Arctic Ice contains three areas in which blocks can be put: above the post content, below the post content, and in the sidebar.]]></description>
 	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
 	<areas>
+		<area name="nav_top">
+			<description><![CDATA[Page Top Navigation]]></description>
+		</area>
 		<area name="post_top">
 			<description><![CDATA[Post Top]]></description>
 		</area>
@@ -20,4 +23,7 @@
 			<description><![CDATA[Sidebar]]></description>
 		</area>
 	</areas>
+	<requires>
+		<feature>Menu</feature>
+	</requires>
 </pluggable>

@@ -2,8 +2,8 @@
 <!--begin content-->
 <div id="content">
 	<nav class="postnav">
-		<div class="postnext">{hi:@next_post_link}</div>
-		<div class="postprev">{hi:@prev_post_link}</div>
+		<div class="postnext">{hi:@next_post_link_out}</div>
+		<div class="postprev">{hi:@prev_post_link_out}</div>
 	</nav>
 
 	<article id="post-{hi:post.id}" class="{hi:post.statusname}">

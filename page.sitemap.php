@@ -11,7 +11,7 @@
 	</section>
 	<section>
 	<h2>{hi:"All Posts"}</h2>
-	{hi:@all_entries}
+	{hi:@all_entries_out}
 	</section>
 </div>
 <!--end content content-->

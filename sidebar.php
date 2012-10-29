@@ -3,12 +3,12 @@
 	<aside>
 	<h2>{hi:"Subscribe"}</h2>
 	<ul class="rss">
-		<li><a href="{hi:@feed_site}">{hi:"Subscribe to the Feed"}</a></li>
+		<li><a href="{hi:@feed_site_out}">{hi:"Subscribe to the Feed"}</a></li>
 	</ul>
 	</aside>
 
-	{hi:@sidebar_top}
+	{hi:@sidebar_top_out}
         {hi:area:sidebar}
-	{hi:@sidebar}
-	{hi:@sidebar_bottom}
+	{hi:@sidebar_out}
+	{hi:@sidebar_bottom_out}
 </div><!--end secondary content-->

@@ -54,7 +54,7 @@ code {
 /* =Forms
 -----------------------------------------------------------------------------*/
 
-/* Removes fieldset borders. even on Opea 7 */
+/* Removes fieldset borders. even on Opera 7 */
 fieldset {
   border: 1px solid transparent;
 }
@@ -295,7 +295,7 @@ ul#tidbits a {
 /* =Main menu
 -----------------------------------------------------------------------------*/
 
-ul.sitemenu {
+ol.sitemenu {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -311,19 +311,19 @@ ul.sitemenu {
 }
 
 
-ul.sitemenu li{
+ol.sitemenu li{
 	display: inline;
 	list-style-type: none;
 	vertical-align: -30%;
 }
 
-ul.sitemenu li a {
+ol.sitemenu li a {
 	text-decoration: none;
 	padding: 0 0.5em;
 	color: #229;
 }
 
-ul.sitemenu li a:hover {
+ol.sitemenu li a:hover {
 /*	color: #e0a352; */
 	color: #f22;
 	text-decoration: none;
@@ -335,10 +335,11 @@ ul.sitemenu li a:hover {
 	text-decoration: none;
 }
 
-.sitemenu .search {
+.sitemenu li.search {
 	position: absolute;
 	right: 0;
 	padding-right: 2em; bottom: 0.2em;
+	list-style-type: none;
 }
 
 /* =Masthead
