@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pluggable type="theme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://schemas.habariproject.org/pluggable/0.8"> 
 	<name>Arctic Ice</name>
-	<class>ArcticIceTheme</class>
+        <guid>5f370f41-7fd5-4f4c-be3c-7484ad635ccc</guid>
 	<author url="http://sagrising.cockrumpublishing.com">Richard Cockrum</author>
 	<url>http://sagrising.cockrumpublishing.com/</url>
 	<version>1.2</version>
