@@ -38,8 +38,34 @@ class ArcticIceTheme extends Theme
 	{
 		// Add the stylesheets to the stack for output
 		Stack::add( 'template_stylesheet', array( Site::get_url( 'theme') . '/style.css', 'screen') );
-		Stack::add( 'template_stylesheet', array( Site::get_url( 'theme') . '/custom.css', 'screen') );
 		Stack::add( 'template_stylesheet', array( Site::get_url( 'theme') . '/print.css', 'print') );
+
+		Stack::add( 'template_header_javascript', 'jquery' );
+/*
+		$script = <<< HEADER_JS
+function showMenu (event) {
+    if (menu.is(":visible"))
+        menu.slideUp({complete:function(){$(this).css('display','')}});
+    else
+        menu.slideDown();
+}
+
+var header = undefined;
+var menu = undefined;
+var menuButton = undefined;
+$(document).ready(function(){
+//    header = $("header");
+    headerMenu= $("nav.sitemenu");
+    menu = $(".sitemenu ol");
+    menuButton = $("<div class='menu-button'><a href='#'>Menu</a></div>");
+    menuButton.click(showMenu);
+//    header.append(menuButton);
+headerMenu.append(menuButton);
+});
+
+HEADER_JS;
+		Stack::add( 'template_header_javascript',  $script, 'select-menu', array('jquery') );
+*/
 	}
 
 	public function theme_title( $theme )

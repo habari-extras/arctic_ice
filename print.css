@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 Arctic Ice - Based on mzingi by Michael Bishop (http://bloggingmeta.com/mzingi)
-Version:	0.62
+Version:	1.3
 Author:	Richard Cockrum
 Email:	rickcockrum@gmail.com
 Website:	http://sagrising.cockrumpublishing.com/
@@ -171,7 +171,7 @@ body {
 	display: none;
 }
 
-#footer {
+#page-footer {
 	display: none;
 }
 
@@ -213,19 +213,6 @@ h6 {
 	color: #666;
 	font-size: 1.1em;
 	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-}
-
-
-.site {
-
-}
-
-.aside {
-
-}
-
-.commentheading {
-
 }
 
 
@@ -409,7 +396,10 @@ blockquote.left {
 
 /* Comment Form - heavily leaned on code from Andy Budd's book CSS Mastery, re-used with permission from author */
 /* fieldset styling */
-#comments_form {
+.commentform {
+	display: none;
+}
+#respond {
 	display: none;
 }
 

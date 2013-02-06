@@ -24,6 +24,6 @@
 		</area>
 	</areas>
 	<requires>
-		<feature>Menu</feature>
+		<feature>menu</feature>
 	</requires>
 </pluggable>

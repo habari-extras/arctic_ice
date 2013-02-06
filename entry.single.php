@@ -38,5 +38,6 @@
 
 	{hi:display:comments}
 </div><!--end content-->
+
 {hi:display:sidebar}
 {hi:display:footer}
