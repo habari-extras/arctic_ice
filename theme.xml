@@ -7,7 +7,7 @@
 	<version>1.2</version>
 	<copyright>2011</copyright>
 	<template_engine>HiEngine</template_engine>
-	<description><![CDATA[A cool blue two column theme based on Habari's Mzingi. Arctic Ice uses Habari's HiEngine templating engine. Arctic Ice contains three areas in which blocks can be put: above the post content, below the post content, and in the sidebar.]]></description>
+	<description><![CDATA[A cool blue responsive two column theme based on Habari's Mzingi. Arctic Ice uses Habari's HiEngine templating engine. Arctic Ice contains three areas in which blocks can be put: above the post content, below the post content, and in the sidebar.]]></description>
 	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
 	<areas>
 		<area name="nav_top">
